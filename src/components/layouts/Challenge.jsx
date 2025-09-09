@@ -16,6 +16,7 @@ const Challenge = (props) => {
   const [wordIndex, setWordIndex] = useState(0);
   const [inputVal, setInputVal] = useState("");
   const [showDefinition, setShowDefinition] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [listToLearn, setListToLearn] = useState([
     ...daysWords,
     ...shuffle(daysWords),
